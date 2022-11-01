@@ -1,0 +1,11 @@
+<div class="new-appointment">
+  <div
+    class="date"
+    [style.background-color]="appointment?.catColor">
+    {{appointment?.date | date : 'MMM d, y'}}
+  </div>
+  <div class="information">
+    <div class="cat-name">{{appointment?.catName}}</div>
+    <div class="description">{{appointment?.description}}</div>
+  </div>
+</div>

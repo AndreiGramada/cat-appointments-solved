@@ -1,0 +1,27 @@
+<div class="new-appointment">
+  <div class="form">
+    <div class="form-control name">
+      <label>Name</label>
+      <input [(ngModel)]="appointment.catName" type="text">
+    </div>
+    <div class="form-control color">
+      <label>Color</label>
+      <select [(ngModel)]="appointment.catColor">
+        <option value="black">Black</option>
+        <option value="orange">Orange</option>
+        <option value="gray">Gray</option>
+      </select>
+    </div>
+    <div class="form-control description">
+      <label>Description</label>
+      <textarea cols="10" rows="10" [(ngModel)]="appointment.description"></textarea>
+    </div>
+    <div class="form-control date">
+      <label>Date</label>
+      <input type="date" [(ngModel)]="appointment.date">
+    </div>
+  </div>
+  <div class="actions">
+    <button class="save-appointment" (click)="saveAppointment()">Save</button>
+  </div>
+</div>
